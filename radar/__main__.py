@@ -5,6 +5,7 @@
   python -m radar resolve "Ski Aggu"  # look up Deezer/MusicBrainz/Spotify IDs for artists.yaml
   python -m radar resolve --all       # auto-match IDs for every artist -> artist_ids.yaml
   python -m radar calendar            # release calendar by chart week, incl. collisions
+  python -m radar digest              # daily e-mail report (last 24 h + calendar)
 """
 
 from __future__ import annotations
@@ -14,7 +15,7 @@ import logging
 import os
 import sys
 
-from . import http, resolver, runner
+from . import digest, http, resolver, runner
 from .sources import catalogs
 
 
@@ -56,6 +57,8 @@ def main(argv: list[str] | None = None) -> int:
     rs.add_argument("name", nargs="?", help="ein Artist (Kandidaten anzeigen)")
     rs.add_argument("--all", action="store_true", help="alle Artists automatisch abgleichen -> artist_ids.yaml")
     rs.add_argument("--refresh", action="store_true", help="auch bereits gefundene IDs neu suchen")
+    d = sub.add_parser("digest", help="Tagesreport per E-Mail senden")
+    d.add_argument("--preview", help="HTML in diese Datei schreiben statt senden")
     c = sub.add_parser("calendar")
     c.add_argument("--days", type=int, default=120)
     c.add_argument("--out", help="Markdown-Datei schreiben statt ausgeben")
@@ -72,6 +75,14 @@ def main(argv: list[str] | None = None) -> int:
             resolve(args.name)
         else:
             p.error("Artist-Name oder --all angeben")
+    elif args.cmd == "digest":
+        if args.preview:
+            subject, _, html = digest.build(args.db, own)
+            with open(args.preview, "w", encoding="utf-8") as f:
+                f.write(html)
+            print(subject)
+        else:
+            digest.send(args.db, own)
     elif args.cmd == "calendar":
         md = runner.upcoming(args.db, own, days=args.days)
         if args.out:

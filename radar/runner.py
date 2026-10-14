@@ -110,11 +110,9 @@ def run(artists_path: str, own_path: str | None, db_path: str, dry_run: bool = F
     return all_signals
 
 
-def upcoming(db_path: str, own_path: str | None, days: int = 120, today: date | None = None) -> str:
-    """Markdown calendar of known competitor releases by chart week, next to own releases."""
-    today = today or date.today()
-    store = Store(db_path)
-    own_weeks = own_release_fridays(load_yaml(own_path)) if own_path else {}
+def calendar_weeks(store: Store, own_weeks: dict[date, list[str]], today: date,
+                   days: int = 120) -> dict[date, dict[str, list[str]]]:
+    """Chart Friday -> {"competition": [...], "own": [...]} for known upcoming releases."""
     weeks: dict[date, dict[str, list[str]]] = {}
     for row in store.recent_signals(days=365):
         if not row["release_date"]:
@@ -129,10 +127,16 @@ def upcoming(db_path: str, own_path: str | None, days: int = 120, today: date | 
     for fri, own in own_weeks.items():
         if today - timedelta(days=6) <= fri <= today + timedelta(days=days):
             weeks.setdefault(fri, {"competition": [], "own": []})["own"].extend(own)
+    return dict(sorted(weeks.items()))
 
+
+def upcoming(db_path: str, own_path: str | None, days: int = 120, today: date | None = None) -> str:
+    """Markdown calendar of known competitor releases by chart week, next to own releases."""
+    today = today or date.today()
+    own_weeks = own_release_fridays(load_yaml(own_path)) if own_path else {}
+    weeks = calendar_weeks(Store(db_path), own_weeks, today, days)
     out = ["# Release-Kalender nach Chartwoche", ""]
-    for fri in sorted(weeks):
-        w = weeks[fri]
+    for fri, w in weeks.items():
         flag = " ⚠️ KOLLISION" if w["competition"] and w["own"] else ""
         out.append(f"## Chartwoche ab Fr {fri:%d.%m.%Y}{flag}")
         out += [f"- Konkurrenz: {c}" for c in w["competition"]]

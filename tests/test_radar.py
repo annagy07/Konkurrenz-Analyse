@@ -157,3 +157,30 @@ def test_artists_yaml_is_valid():
     artists = yaml.safe_load(open("artists.yaml", encoding="utf-8"))["artists"]
     names = [a["name"] for a in artists]
     assert len(names) == 200 and len(set(names)) == 200
+
+
+def test_digest_lists_new_signals_and_collisions(tmp_path):
+    from radar import digest
+    from radar.models import Signal
+
+    db = tmp_path / "r.db"
+    store = Store(db)
+    it = Item("deezer", "deezer:1", "2", "Ski Aggu", "Neues Album", url="https://deezer.example/a",
+              release_date=date(2026, 11, 22), record_type="album", structured=True)
+    store.save_signal(Signal(item=it, score=14, level="hoch", release_date=date(2026, 11, 22)))
+    store.commit()
+    own = tmp_path / "own.yaml"
+    own.write_text("releases:\n  - {artist: Wir, title: Unser Album, date: 2026-11-20}\n", encoding="utf-8")
+
+    subject, text, html = digest.build(str(db), str(own), today=TODAY)
+    assert "1 neue Hinweise, davon 1 hoch" in subject and "Kollision" in subject
+    assert "Ski Aggu" in text and "Chartwoche ab Fr 20.11.2026" in text and "Unser Album" in text
+    assert "Ski Aggu" in html and "Kollision" in html
+
+
+def test_digest_empty(tmp_path):
+    from radar import digest
+
+    subject, text, _ = digest.build(str(tmp_path / "r.db"), None, today=TODAY)
+    assert subject.endswith("keine neuen Hinweise")
+    assert "Keine neuen Album-Hinweise" in text

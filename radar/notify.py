@@ -1,9 +1,10 @@
-"""Alert channels: console (always), Microsoft Teams, Slack, e-mail. Configured via environment variables."""
+"""Alert channels: console (always), Teams and Slack per run; e-mail is sent as a daily digest (see digest.py)."""
 
 from __future__ import annotations
 
 import os
 import smtplib
+from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from . import http
@@ -50,13 +51,24 @@ def send(signals: list[Signal]) -> None:
     if url := os.getenv("SLACK_WEBHOOK_URL"):
         http.session.post(url, json={"text": f"*{title}*\n```{body}```"}, timeout=20).raise_for_status()
 
-    if (host := os.getenv("SMTP_HOST")) and (to := os.getenv("ALERT_EMAIL_TO")):
-        msg = MIMEText(body, "plain", "utf-8")
-        msg["Subject"] = title
-        msg["From"] = os.getenv("SMTP_FROM", os.getenv("SMTP_USER", "radar@localhost"))
-        msg["To"] = to
-        with smtplib.SMTP(host, int(os.getenv("SMTP_PORT", "587"))) as smtp:
-            smtp.starttls()
-            if user := os.getenv("SMTP_USER"):
-                smtp.login(user, os.getenv("SMTP_PASSWORD", ""))
-            smtp.sendmail(msg["From"], to.split(","), msg.as_string())
+
+
+def send_email(subject: str, text: str, html: str | None = None) -> bool:
+    """Send via SMTP (STARTTLS). Recipient defaults to the SMTP account itself. Returns False if not configured."""
+    host, user = os.getenv("SMTP_HOST"), os.getenv("SMTP_USER")
+    to = os.getenv("ALERT_EMAIL_TO") or user
+    if not (host and to):
+        return False
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = os.getenv("SMTP_FROM") or user or "radar@localhost"
+    msg["To"] = to
+    msg.attach(MIMEText(text, "plain", "utf-8"))
+    if html:
+        msg.attach(MIMEText(html, "html", "utf-8"))
+    with smtplib.SMTP(host, int(os.getenv("SMTP_PORT") or 587), timeout=30) as smtp:
+        smtp.starttls()
+        if user:
+            smtp.login(user, os.getenv("SMTP_PASSWORD", ""))
+        smtp.sendmail(msg["From"], [a.strip() for a in to.split(",")], msg.as_string())
+    return True

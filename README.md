@@ -36,6 +36,8 @@ python -m radar resolve "Ski Aggu"     # Kandidaten für einen Artist anzeigen
 python -m radar run --dry-run          # Probelauf, ändert nichts
 python -m radar run                    # echter Lauf mit Alarm
 python -m radar calendar               # Release-Kalender nach Chartwoche inkl. Kollisionen
+python -m radar digest                 # Tagesreport per E-Mail (letzte 24 Std. + Kalender)
+python -m radar digest --preview r.html  # Report als HTML-Datei ansehen statt senden
 ```
 
 1. `artists.yaml` enthält bereits **200 chart-relevante Artists** aus Deutschrap, Pop, Schlager, Rock und
@@ -47,8 +49,13 @@ python -m radar calendar               # Release-Kalender nach Chartwoche inkl. 
    Diese Datei ist per `.gitignore` ausgeschlossen.
 3. **GitHub Actions** (`.github/workflows/radar.yml`) läuft alle 2 Stunden. Unter
    *Settings → Secrets and variables → Actions* die gewünschten Secrets anlegen:
-   - Alarm: `TEAMS_WEBHOOK_URL` (Teams → Workflows → „Post to a channel when a webhook request is received“),
-     `SLACK_WEBHOOK_URL` oder `SMTP_HOST`/`SMTP_PORT`/`SMTP_USER`/`SMTP_PASSWORD`/`ALERT_EMAIL_TO`
+   - **Tagesreport per E-Mail** (Workflow „Tagesreport per E-Mail“, täglich ca. 07:43 Uhr Sommerzeit / 06:43 Uhr Winterzeit):
+     `SMTP_USER` (E-Mail-Adresse) und `SMTP_PASSWORD`. Standard-Server ist GMX (`mail.gmx.net:587`).
+     Bei anderen Anbietern zusätzlich `SMTP_HOST`/`SMTP_PORT` setzen. Optional `ALERT_EMAIL_TO` für andere oder mehrere
+     Empfänger (kommagetrennt). Ohne diesen Eintrag geht der Report an `SMTP_USER`.
+     Bei GMX muss unter *Einstellungen → POP3/IMAP Abruf* der externe Zugriff erlaubt sein.
+   - Sofort-Alarm je Lauf (optional): `TEAMS_WEBHOOK_URL` (Teams → Workflows → „Post to a channel when a webhook
+     request is received“) oder `SLACK_WEBHOOK_URL`
    - Eigene Planung: `OWN_RELEASES_YAML` (Inhalt der YAML-Datei)
    - Optional: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `APPLE_MUSIC_TOKEN`, `IG_ACCESS_TOKEN`, `IG_USER_ID`
 
