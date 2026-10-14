@@ -1,0 +1,8 @@
+# Vertraulich: eigene Release-Planung
+own_releases.yaml
+# Laufzeit-Zustand (wird in GitHub Actions per Cache gehalten)
+data/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env

@@ -1,0 +1,11 @@
+# VORLAGE. Echte Datei heißt own_releases.yaml und ist per .gitignore ausgeschlossen –
+# in GitHub Actions kommt sie aus dem Secret OWN_RELEASES_YAML. Niemals echte Planung committen.
+#
+# Eigene geplante Veröffentlichungen. Der Radar meldet eine Kollision, wenn ein
+# Konkurrenz-Album in dieselbe Chartwoche (Fr–Do) fällt.
+# Beispiel-Einträge – durch echte Planung ersetzen (oder später aus der Release-Planung exportieren).
+
+releases:
+  - artist: Beispiel-Artist
+    title: Beispiel-Album
+    date: 2026-11-20

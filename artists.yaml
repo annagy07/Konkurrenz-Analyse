@@ -1,0 +1,63 @@
+# Watchlist der Konkurrenz-Artists.
+#
+# IDs findest du mit:  python -m radar resolve "Ski Aggu"
+# Jede Quelle ist optional – je mehr Quellen, desto früher der Treffer.
+#
+#   ids.deezer       Deezer Artist-ID (kostenlos, kein Key)       – zeigt angekündigte Alben mit VÖ-Datum
+#   ids.musicbrainz  MusicBrainz-ID (kostenlos)                   – Community trägt Ankündigungen schnell ein
+#   ids.spotify      Spotify Artist-ID (SPOTIFY_CLIENT_ID/SECRET) – Countdown-Pages / Pre-Saves
+#   ids.apple_music  Apple Music Artist-ID (APPLE_MUSIC_TOKEN)    – Pre-Orders mit Datum
+#   ids.youtube      YouTube Channel-ID (UC…)                     – Trailer, Snippets, Premieren
+#   ids.instagram    Instagram-Username (IG_ACCESS_TOKEN/IG_USER_ID, nur Business/Creator-Accounts)
+#   websites         Seiten, deren Text bei jeder Änderung geprüft wird (Artist-Site, Label-Artistseite, Linktree)
+#   shops            D2C-Shops auf Shopify-Basis (/products.json). Bei Label-Shops "filter" = Artistname
+#   feeds            Beliebige RSS-Feeds, z.B. RSSHub-Routen für Instagram/TikTok/X oder Label-Newsrooms
+#   news             Google-News-Suche nach "<Artist>" + Album-Begriffen (Standard: an)
+#   priority         high = niedrigere Alarmschwelle
+#
+# ACHTUNG: IDs/URLs unten sind Platzhalter und müssen einmalig befüllt und geprüft werden.
+
+settings:
+  min_score: 5        # ab diesem Score wird alarmiert ("mittel"); ab 10 = "hoch"
+  google_news: true
+
+artists:
+  - name: Ski Aggu
+    priority: high
+    ids:
+      deezer:
+      musicbrainz:
+      spotify:
+      apple_music:
+      youtube:
+      instagram:
+    websites: []
+      # - https://www.example-artist-site.de
+    shops: []
+      # - url: https://shop.example-label.de
+      #   filter: Ski Aggu
+    feeds: []
+      # - url: https://rsshub.app/instagram/user/skiaggu
+      #   label: instagram
+
+  - name: Apache 207
+    priority: high
+    ids: {deezer: , musicbrainz: , youtube: }
+
+  - name: Luciano
+    ids: {deezer: , musicbrainz: , youtube: }
+
+  - name: Shirin David
+    ids: {deezer: , musicbrainz: , youtube: }
+
+  - name: Nina Chuba
+    ids: {deezer: , musicbrainz: , youtube: }
+
+  - name: Pashanim
+    ids: {deezer: , musicbrainz: , youtube: }
+
+  - name: Bonez MC
+    ids: {deezer: , musicbrainz: , youtube: }
+
+  - name: Ayliva
+    ids: {deezer: , musicbrainz: , youtube: }
