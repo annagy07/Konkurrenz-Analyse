@@ -111,3 +111,49 @@ def test_evaluate_baseline_dedup_and_collision(tmp_path):
     single = Item("deezer", "deezer:1", "3", "Ski Aggu", "Album Teaser (Single)", record_type="single",
                   structured=True, text="vom kommenden Album, vorbestellen")
     assert [s.item.item_id for s in runner.evaluate([single], store, TODAY, own, min_score=5)] == ["3"]
+
+
+def test_resolver_exact_match_and_ambiguity():
+    from radar import resolver
+
+    deezer = {"data": [
+        {"id": 1, "name": "Ski Aggu", "nb_fan": 500000},
+        {"id": 2, "name": "Ski Aggu & Friends", "nb_fan": 900000},
+    ]}
+    with patch("radar.http.get", return_value=FakeResp(deezer)):
+        assert resolver.deezer_match("Ski Aggu") == {"deezer": 1, "deezer_fans": 500000}
+
+    twins = {"data": [{"id": 5, "name": "Michelle", "nb_fan": 100000}, {"id": 6, "name": "Michelle", "nb_fan": 80000}]}
+    with patch("radar.http.get", return_value=FakeResp(twins)):
+        assert resolver.deezer_match("Michelle")["check"] is True
+
+    mb = {"artists": [
+        {"id": "us", "name": "Fantasy", "country": "US", "score": 100},
+        {"id": "de", "name": "Fantasy", "country": "DE", "score": 100},
+    ]}
+    with patch("radar.http.get", return_value=FakeResp(mb)):
+        assert resolver.musicbrainz_match("Fantasy", german=True) == {"musicbrainz": "de"}
+        assert resolver.musicbrainz_match("Fantasy", german=False)["check"] is True
+
+    assert resolver.norm("Badmómzjay") == resolver.norm("badmomzjay")
+
+
+def test_auto_ids_merge_and_skip():
+    artists = [
+        {"name": "A", "ids": {"deezer": 99, "musicbrainz": None}},
+        {"name": "B"},
+        {"name": "C", "skip": True},
+    ]
+    auto = {"A": {"deezer": 1, "musicbrainz": "mb-a"}, "B": {"deezer": 2, "check": True}}
+    merged = runner.with_auto_ids(artists, auto)
+    assert [m["name"] for m in merged] == ["A", "B"]
+    assert merged[0]["ids"] == {"deezer": 99, "musicbrainz": "mb-a"}  # manual wins, gaps filled
+    assert merged[1]["ids"] == {"deezer": 2}
+
+
+def test_artists_yaml_is_valid():
+    import yaml
+
+    artists = yaml.safe_load(open("artists.yaml", encoding="utf-8"))["artists"]
+    names = [a["name"] for a in artists]
+    assert len(names) == 200 and len(set(names)) == 200

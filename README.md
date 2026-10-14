@@ -31,13 +31,18 @@ Alben, die schon mit künftigem Datum gelistet sind. Danach meldet das Tool auss
 
 ```bash
 pip install -r requirements.txt
-python -m radar resolve "Ski Aggu"     # IDs nachschlagen und in artists.yaml eintragen
+python -m radar resolve --all          # IDs für alle Artists automatisch suchen -> artist_ids.yaml
+python -m radar resolve "Ski Aggu"     # Kandidaten für einen Artist anzeigen
 python -m radar run --dry-run          # Probelauf, ändert nichts
 python -m radar run                    # echter Lauf mit Alarm
 python -m radar calendar               # Release-Kalender nach Chartwoche inkl. Kollisionen
 ```
 
-1. In `artists.yaml` die Watchlist pflegen: IDs, Websites, Shops, Feeds.
+1. `artists.yaml` enthält bereits **200 chart-relevante Artists** aus Deutschrap, Pop, Schlager, Rock und
+   internationalen Acts. Eigene Sony-Artists bei Bedarf mit `skip: true` ausschließen.
+   **Einmalig die IDs suchen:** in GitHub unter *Actions → „IDs suchen“ → Run workflow*. Das schreibt
+   `artist_ids.yaml`. Einträge mit `check: true` kurz prüfen, falsche IDs in `artists.yaml` unter `ids:`
+   überschreiben. Websites, Shops und Feeds trägt man nach und nach für die wichtigsten Artists ein.
 2. `own_releases.example.yaml` nach `own_releases.yaml` kopieren und die eigene Planung eintragen.
    Diese Datei ist per `.gitignore` ausgeschlossen.
 3. **GitHub Actions** (`.github/workflows/radar.yml`) läuft alle 2 Stunden. Unter

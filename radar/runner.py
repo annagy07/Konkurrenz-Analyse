@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 from datetime import date, timedelta
 
 import yaml
@@ -60,8 +61,20 @@ def evaluate(items: list[Item], store: Store, today: date, own_weeks: dict[date,
     return signals
 
 
+def with_auto_ids(artists: list[dict], auto_ids: dict) -> list[dict]:
+    """Merge IDs from artist_ids.yaml into each artist; manual ids in artists.yaml win. Drops skip: true."""
+    merged = []
+    for a in artists:
+        if a.get("skip"):
+            continue
+        auto = {k: v for k, v in (auto_ids.get(a["name"]) or {}).items() if k in ("deezer", "musicbrainz") and v}
+        manual = {k: v for k, v in (a.get("ids") or {}).items() if v}
+        merged.append({**a, "ids": {**auto, **manual}})
+    return merged
+
+
 def run(artists_path: str, own_path: str | None, db_path: str, dry_run: bool = False,
-        only: str | None = None, today: date | None = None) -> list[Signal]:
+        only: str | None = None, today: date | None = None, ids_path: str | None = None) -> list[Signal]:
     today = today or date.today()
     cfg = load_yaml(artists_path)
     settings = cfg.get("settings") or {}
@@ -70,7 +83,8 @@ def run(artists_path: str, own_path: str | None, db_path: str, dry_run: bool = F
     store = Store(db_path)
 
     all_signals: list[Signal] = []
-    for artist in cfg.get("artists") or []:
+    auto_ids = load_yaml(ids_path) if ids_path and os.path.exists(ids_path) else {}
+    for artist in with_auto_ids(cfg.get("artists") or [], auto_ids):
         if only and only.lower() not in artist["name"].lower():
             continue
         items: list[Item] = []

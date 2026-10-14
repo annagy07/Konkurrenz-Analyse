@@ -1,63 +1,233 @@
-# Watchlist der Konkurrenz-Artists.
+# Watchlist: 200 für die deutschen Album-Charts relevante Artists.
 #
-# IDs findest du mit:  python -m radar resolve "Ski Aggu"
-# Jede Quelle ist optional – je mehr Quellen, desto früher der Treffer.
+# Auswahl: Album-Jahrescharts und Nummer-1-Alben 2024–2026 (GfK / Offizielle Deutsche Charts), ergänzt um
+# Acts mit regelmäßigen Top-10-Alben. Genres bewusst breit: Die Album-1 holen in Deutschland neben Deutschrap
+# und internationalen Stars sehr oft Schlager-, Deutschrock- und Legacy-Acts.
+#   priority: high  = regelmäßig Platz-1-/Top-3-Potenzial → niedrigere Alarmschwelle
+#   skip: true      = Artist vorübergehend nicht prüfen (z. B. eigene Sony-Artists, falls nicht gewünscht)
 #
-#   ids.deezer       Deezer Artist-ID (kostenlos, kein Key)       – zeigt angekündigte Alben mit VÖ-Datum
-#   ids.musicbrainz  MusicBrainz-ID (kostenlos)                   – Community trägt Ankündigungen schnell ein
-#   ids.spotify      Spotify Artist-ID (SPOTIFY_CLIENT_ID/SECRET) – Countdown-Pages / Pre-Saves
-#   ids.apple_music  Apple Music Artist-ID (APPLE_MUSIC_TOKEN)    – Pre-Orders mit Datum
-#   ids.youtube      YouTube Channel-ID (UC…)                     – Trailer, Snippets, Premieren
-#   ids.instagram    Instagram-Username (IG_ACCESS_TOKEN/IG_USER_ID, nur Business/Creator-Accounts)
-#   websites         Seiten, deren Text bei jeder Änderung geprüft wird (Artist-Site, Label-Artistseite, Linktree)
-#   shops            D2C-Shops auf Shopify-Basis (/products.json). Bei Label-Shops "filter" = Artistname
-#   feeds            Beliebige RSS-Feeds, z.B. RSSHub-Routen für Instagram/TikTok/X oder Label-Newsrooms
-#   news             Google-News-Suche nach "<Artist>" + Album-Begriffen (Standard: an)
-#   priority         high = niedrigere Alarmschwelle
+# IDs: Deezer- und MusicBrainz-IDs werden automatisch gesucht (python -m radar resolve --all, oder in GitHub
+# über Actions → "IDs suchen") und in artist_ids.yaml gespeichert. Manuelle IDs hier haben Vorrang.
 #
-# ACHTUNG: IDs/URLs unten sind Platzhalter und müssen einmalig befüllt und geprüft werden.
+# Vollständiges Beispiel mit allen Quellen:
+#   - name: Ski Aggu
+#     priority: high
+#     ids: {deezer: 123, musicbrainz: <uuid>, spotify: <id>, apple_music: <id>, youtube: UC..., instagram: skiaggu}
+#     websites: [https://www.example-artist.de]
+#     shops: [{url: https://shop.example-label.de, filter: Ski Aggu}]
+#     feeds: [{url: https://rsshub.example/instagram/user/skiaggu, label: instagram}]
 
 settings:
   min_score: 5        # ab diesem Score wird alarmiert ("mittel"); ab 10 = "hoch"
   google_news: true
 
 artists:
-  - name: Ski Aggu
-    priority: high
-    ids:
-      deezer:
-      musicbrainz:
-      spotify:
-      apple_music:
-      youtube:
-      instagram:
-    websites: []
-      # - https://www.example-artist-site.de
-    shops: []
-      # - url: https://shop.example-label.de
-      #   filter: Ski Aggu
-    feeds: []
-      # - url: https://rsshub.app/instagram/user/skiaggu
-      #   label: instagram
+  # ── Deutschrap / Urban ──────────────────────────────────────────
+  - {name: "Ski Aggu", genre: Deutschrap, priority: high}
+  - {name: "Apache 207", genre: Deutschrap, priority: high}
+  - {name: "Luciano", genre: Deutschrap, priority: high}
+  - {name: "Kontra K", genre: Deutschrap, priority: high}
+  - {name: "Bonez MC", genre: Deutschrap, priority: high}
+  - {name: "RAF Camora", genre: Deutschrap, priority: high}
+  - {name: "Shirin David", genre: Deutschrap, priority: high}
+  - {name: "Ayliva", genre: Deutschrap, priority: high}
+  - {name: "Jazeek", genre: Deutschrap, priority: high}
+  - {name: "Pashanim", genre: Deutschrap, priority: high}
+  - {name: "Badmómzjay", genre: Deutschrap, priority: high}
+  - {name: "Sido", genre: Deutschrap, priority: high}
+  - {name: "Kollegah", genre: Deutschrap, priority: high}
+  - {name: "Capital Bra", genre: Deutschrap, priority: high}
+  - {name: "Samra", genre: Deutschrap, priority: high}
+  - {name: "Gzuz", genre: Deutschrap, priority: high}
+  - {name: "187 Strassenbande", genre: Deutschrap, priority: high}
+  - {name: "Haftbefehl", genre: Deutschrap, priority: high}
+  - {name: "Cro", genre: Deutschrap, priority: high}
+  - {name: "Kool Savas", genre: Deutschrap, priority: high}
+  - {name: "Ufo361", genre: Deutschrap, priority: high}
+  - {name: "Bushido", genre: Deutschrap, priority: high}
+  - {name: "Shindy", genre: Deutschrap, priority: high}
+  - {name: "Marteria", genre: Deutschrap, priority: high}
+  - {name: "Casper", genre: Deutschrap, priority: high}
+  - {name: "K.I.Z", genre: Deutschrap, priority: high}
+  - {name: "Alligatoah", genre: Deutschrap, priority: high}
+  - {name: "OG Keemo", genre: Deutschrap, priority: high}
+  - {name: "Montez", genre: Deutschrap}
+  - {name: "Bausa", genre: Deutschrap}
+  - {name: "Summer Cem", genre: Deutschrap}
+  - {name: "Yung Hurn", genre: Deutschrap}
+  - {name: "RIN", genre: Deutschrap}
+  - {name: "Eno", genre: Deutschrap}
+  - {name: "Data Luv", genre: Deutschrap}
+  - {name: "Jamule", genre: Deutschrap}
+  - {name: "Nimo", genre: Deutschrap}
+  - {name: "Azet", genre: Deutschrap}
+  - {name: "Zuna", genre: Deutschrap}
+  - {name: "KC Rebell", genre: Deutschrap}
+  - {name: "Farid Bang", genre: Deutschrap}
+  - {name: "Trettmann", genre: Deutschrap}
+  - {name: "Bozza", genre: Deutschrap}
+  - {name: "Reezy", genre: Deutschrap}
+  - {name: "Symba", genre: Deutschrap}
+  - {name: "Makko", genre: Deutschrap}
+  - {name: "01099", genre: Deutschrap}
+  - {name: "Juju", genre: Deutschrap}
+  - {name: "Loredana", genre: Deutschrap}
+  - {name: "Danger Dan", genre: Deutschrap}
 
-  - name: Apache 207
-    priority: high
-    ids: {deezer: , musicbrainz: , youtube: }
+  # ── Deutschpop / Singer-Songwriter ──────────────────────────────
+  - {name: "Nina Chuba", genre: Deutschpop, priority: high}
+  - {name: "Helene Fischer", genre: Deutschpop, priority: high}
+  - {name: "Mark Forster", genre: Deutschpop, priority: high}
+  - {name: "Wincent Weiss", genre: Deutschpop, priority: high}
+  - {name: "Johannes Oerding", genre: Deutschpop, priority: high}
+  - {name: "Sarah Connor", genre: Deutschpop, priority: high}
+  - {name: "Herbert Grönemeyer", genre: Deutschpop, priority: high}
+  - {name: "Udo Lindenberg", genre: Deutschpop, priority: high}
+  - {name: "Peter Fox", genre: Deutschpop, priority: high}
+  - {name: "AnnenMayKantereit", genre: Deutschpop, priority: high}
+  - {name: "Kraftklub", genre: Deutschpop, priority: high}
+  - {name: "Max Giesinger", genre: Deutschpop, priority: high}
+  - {name: "LEA", genre: Deutschpop, priority: high}
+  - {name: "Clueso", genre: Deutschpop, priority: high}
+  - {name: "Tim Bendzko", genre: Deutschpop, priority: high}
+  - {name: "Revolverheld", genre: Deutschpop, priority: high}
+  - {name: "Silbermond", genre: Deutschpop, priority: high}
+  - {name: "Zartmann", genre: Deutschpop, priority: high}
+  - {name: "Provinz", genre: Deutschpop, priority: high}
+  - {name: "Peter Maffay", genre: Deutschpop, priority: high}
+  - {name: "Reinhard Mey", genre: Deutschpop, priority: high}
+  - {name: "Schiller", genre: Deutschpop, priority: high}
+  - {name: "Nena", genre: Deutschpop}
+  - {name: "Adel Tawil", genre: Deutschpop}
+  - {name: "Michael Patrick Kelly", genre: Deutschpop}
+  - {name: "Giant Rooks", genre: Deutschpop}
+  - {name: "Tokio Hotel", genre: Deutschpop}
+  - {name: "Jeremias", genre: Deutschpop}
+  - {name: "Ennio", genre: Deutschpop}
+  - {name: "Berq", genre: Deutschpop}
+  - {name: "Paula Hartmann", genre: Deutschpop}
+  - {name: "Fynn Kliemann", genre: Deutschpop}
+  - {name: "Olli Schulz", genre: Deutschpop}
+  - {name: "Element of Crime", genre: Deutschpop}
+  - {name: "Tocotronic", genre: Deutschpop}
+  - {name: "Die Fantastischen Vier", genre: Deutschpop}
+  - {name: "Seeed", genre: Deutschpop}
+  - {name: "Deichkind", genre: Deutschpop}
+  - {name: "Bosse", genre: Deutschpop}
+  - {name: "Philipp Poisel", genre: Deutschpop}
+  - {name: "Pur", genre: Deutschpop}
+  - {name: "Unheilig", genre: Deutschpop}
+  - {name: "Wolfgang Petry", genre: Deutschpop}
+  - {name: "Kerstin Ott", genre: Deutschpop}
+  - {name: "Scooter", genre: Deutschpop}
+  - {name: "Wanda", genre: Deutschpop}
+  - {name: "Bilderbuch", genre: Deutschpop}
+  - {name: "Seiler und Speer", genre: Deutschpop}
 
-  - name: Luciano
-    ids: {deezer: , musicbrainz: , youtube: }
+  # ── Schlager / Volksmusik ───────────────────────────────────────
+  - {name: "Roland Kaiser", genre: Schlager, priority: high}
+  - {name: "Andrea Berg", genre: Schlager, priority: high}
+  - {name: "Florian Silbereisen", genre: Schlager, priority: high}
+  - {name: "Die Amigos", genre: Schlager, priority: high}
+  - {name: "Fantasy", genre: Schlager, priority: high}
+  - {name: "Beatrice Egli", genre: Schlager, priority: high}
+  - {name: "Andreas Gabalier", genre: Schlager, priority: high}
+  - {name: "Ben Zucker", genre: Schlager, priority: high}
+  - {name: "Giovanni Zarrella", genre: Schlager, priority: high}
+  - {name: "Vanessa Mai", genre: Schlager, priority: high}
+  - {name: "Thomas Anders", genre: Schlager, priority: high}
+  - {name: "Howard Carpendale", genre: Schlager}
+  - {name: "Matthias Reim", genre: Schlager}
+  - {name: "Semino Rossi", genre: Schlager}
+  - {name: "Maite Kelly", genre: Schlager}
+  - {name: "Michelle", genre: Schlager}
+  - {name: "DJ Ötzi", genre: Schlager}
+  - {name: "Kastelruther Spatzen", genre: Schlager}
+  - {name: "Ikke Hüftgold", genre: Schlager}
+  - {name: "Isi Glück", genre: Schlager}
+  - {name: "Oimara", genre: Schlager}
+  - {name: "Daniela Alfinito", genre: Schlager}
+  - {name: "Pietro Lombardi", genre: Schlager}
+  - {name: "Santiano", genre: Schlager}
+  - {name: "André Rieu", genre: Schlager}
+  - {name: "Max Raabe", genre: Schlager}
 
-  - name: Shirin David
-    ids: {deezer: , musicbrainz: , youtube: }
+  # ── Rock / Metal / Punk ─────────────────────────────────────────
+  - {name: "Rammstein", genre: Rock, priority: high}
+  - {name: "Till Lindemann", genre: Rock, priority: high}
+  - {name: "Die Ärzte", genre: Rock, priority: high}
+  - {name: "Die Toten Hosen", genre: Rock, priority: high}
+  - {name: "Böhse Onkelz", genre: Rock, priority: high}
+  - {name: "Broilers", genre: Rock, priority: high}
+  - {name: "Electric Callboy", genre: Rock, priority: high}
+  - {name: "Powerwolf", genre: Rock, priority: high}
+  - {name: "In Extremo", genre: Rock, priority: high}
+  - {name: "Versengold", genre: Rock, priority: high}
+  - {name: "Saltatio Mortis", genre: Rock, priority: high}
+  - {name: "Kissin' Dynamite", genre: Rock, priority: high}
+  - {name: "Feuerschwanz", genre: Rock, priority: high}
+  - {name: "Frei.Wild", genre: Rock, priority: high}
+  - {name: "BAP", genre: Rock}
+  - {name: "Beatsteaks", genre: Rock}
+  - {name: "Subway to Sally", genre: Rock}
+  - {name: "Hämatom", genre: Rock}
+  - {name: "Eisbrecher", genre: Rock}
+  - {name: "Kärbholz", genre: Rock}
+  - {name: "Betontod", genre: Rock}
+  - {name: "Heaven Shall Burn", genre: Rock}
+  - {name: "Kreator", genre: Rock}
+  - {name: "Scorpions", genre: Rock}
+  - {name: "Helloween", genre: Rock}
+  - {name: "Blind Guardian", genre: Rock}
+  - {name: "Schandmaul", genre: Rock}
+  - {name: "Lord of the Lost", genre: Rock}
 
-  - name: Nina Chuba
-    ids: {deezer: , musicbrainz: , youtube: }
-
-  - name: Pashanim
-    ids: {deezer: , musicbrainz: , youtube: }
-
-  - name: Bonez MC
-    ids: {deezer: , musicbrainz: , youtube: }
-
-  - name: Ayliva
-    ids: {deezer: , musicbrainz: , youtube: }
+  # ── International ───────────────────────────────────────────────
+  - {name: "Taylor Swift", genre: International, priority: high}
+  - {name: "Billie Eilish", genre: International, priority: high}
+  - {name: "Linkin Park", genre: International, priority: high}
+  - {name: "Sabrina Carpenter", genre: International, priority: high}
+  - {name: "The Weeknd", genre: International, priority: high}
+  - {name: "Lady Gaga", genre: International, priority: high}
+  - {name: "Ed Sheeran", genre: International, priority: high}
+  - {name: "Coldplay", genre: International, priority: high}
+  - {name: "Metallica", genre: International, priority: high}
+  - {name: "AC/DC", genre: International, priority: high}
+  - {name: "Iron Maiden", genre: International, priority: high}
+  - {name: "Bruce Springsteen", genre: International, priority: high}
+  - {name: "The Rolling Stones", genre: International, priority: high}
+  - {name: "Depeche Mode", genre: International, priority: high}
+  - {name: "P!nk", genre: International, priority: high}
+  - {name: "Adele", genre: International, priority: high}
+  - {name: "Harry Styles", genre: International, priority: high}
+  - {name: "Olivia Rodrigo", genre: International, priority: high}
+  - {name: "BTS", genre: International, priority: high}
+  - {name: "Sabaton", genre: International, priority: high}
+  - {name: "Ghost", genre: International, priority: high}
+  - {name: "Michael Bublé", genre: International, priority: high}
+  - {name: "Robbie Williams", genre: International, priority: high}
+  - {name: "Dua Lipa", genre: International}
+  - {name: "Bad Bunny", genre: International}
+  - {name: "Gracie Abrams", genre: International}
+  - {name: "Lana Del Rey", genre: International}
+  - {name: "Tate McRae", genre: International}
+  - {name: "Stray Kids", genre: International}
+  - {name: "BLACKPINK", genre: International}
+  - {name: "Travis Scott", genre: International}
+  - {name: "Kendrick Lamar", genre: International}
+  - {name: "Drake", genre: International}
+  - {name: "Central Cee", genre: International}
+  - {name: "Kanye West", genre: International}
+  - {name: "Eminem", genre: International}
+  - {name: "Bon Jovi", genre: International}
+  - {name: "Imagine Dragons", genre: International}
+  - {name: "Bring Me The Horizon", genre: International}
+  - {name: "Sleep Token", genre: International}
+  - {name: "Slipknot", genre: International}
+  - {name: "Bruno Mars", genre: International}
+  - {name: "Lewis Capaldi", genre: International}
+  - {name: "Chappell Roan", genre: International}
+  - {name: "Ariana Grande", genre: International}
+  - {name: "Justin Bieber", genre: International}
+  - {name: "Post Malone", genre: International}
+  - {name: "Andrea Bocelli", genre: International}
