@@ -1,0 +1,813 @@
+# AUTOMATISCH ERZEUGT von `python -m radar resolve --all` – nicht von Hand pflegen.
+# Falsche Treffer korrigieren: richtige ID in artists.yaml unter `ids:` eintragen (hat Vorrang).
+# check: true = mehrere Artists mit gleichem Namen gefunden, bitte einmal prüfen.
+01099:
+  deezer: 60761882
+  deezer_fans: 35121
+  musicbrainz: cd2b1779-c481-4a6e-9197-2eabe055e33d
+187 Strassenbande:
+  deezer: 278828
+  deezer_fans: 341363
+  musicbrainz: 9a8c0ee6-18c4-4c02-adf7-cc3cb5aab7a0
+AC/DC:
+  deezer: 115
+  deezer_fans: 9952459
+  musicbrainz: 66c662b6-6e2f-4930-8610-912e24c63ed1
+Adel Tawil:
+  deezer: 875241
+  deezer_fans: 166825
+  musicbrainz: d119b618-6e1a-462d-b7d4-ce76aa1e92ad
+Adele:
+  deezer: 75798
+  deezer_fans: 15493626
+  musicbrainz: cc2c9c3c-b7bc-4b8b-84d8-4fbd8779e493
+Alligatoah:
+  deezer: 1191410
+  deezer_fans: 537169
+  musicbrainz: ebf76ca6-a2c5-4d3a-8e84-7fa3be9e22ab
+Andrea Berg:
+  deezer: 16317
+  deezer_fans: 250620
+  musicbrainz: f8653ae9-b729-4f36-99a5-e05eae90b640
+Andrea Bocelli:
+  deezer: 3201
+  deezer_fans: 1234392
+  musicbrainz: c5a0a216-c33c-42dc-92b8-4b60236f8dad
+Andreas Gabalier:
+  deezer: 202988
+  deezer_fans: 561349
+  musicbrainz: 91a78a7a-321c-48b0-a900-eaa83c5b1d5e
+André Rieu:
+  deezer: 8728
+  deezer_fans: 272794
+  musicbrainz: 0eaa4a38-6bc3-46aa-91be-563f1fa86e16
+AnnenMayKantereit:
+  deezer: 9068122
+  deezer_fans: 216560
+  musicbrainz: 65daba7b-f387-46cc-a0c8-d0191b099586
+Apache 207:
+  deezer: 14956079
+  deezer_fans: 757021
+  musicbrainz: d35722b2-4b31-4bcc-a103-929345524af0
+Ariana Grande:
+  deezer: 1562681
+  deezer_fans: 13445072
+  musicbrainz: f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387
+Ayliva:
+  deezer: 125532822
+  deezer_fans: 278572
+  musicbrainz: a23888ba-2bf5-409b-8fed-8d9b544f175a
+Azet:
+  deezer: 8260054
+  deezer_fans: 335247
+  musicbrainz: 4dc30a31-8beb-430a-9097-38a3a5a121f1
+BAP:
+  check: true
+  deezer: 4019794
+  deezer_fans: 47495
+  musicbrainz: 70261540-4efc-4f62-8573-fdb68d6c2213
+BLACKPINK:
+  deezer: 10803980
+  deezer_fans: 2656056
+  musicbrainz: 48646387-1664-4c9a-9139-9bfd091b823c
+BTS:
+  deezer: 6982223
+  deezer_fans: 3867254
+  musicbrainz: 0d79fe8e-ba27-4859-bb8c-2f255f346853
+Bad Bunny:
+  deezer: 10583405
+  deezer_fans: 8037774
+  musicbrainz: 89aa5ecb-59ad-46f5-b3eb-2d424e941f19
+Badmómzjay:
+  deezer: 67823492
+  deezer_fans: 85471
+  musicbrainz: 7a806d3b-2cb4-43a9-836c-73063493bc4e
+Bausa:
+  deezer: 5210092
+  deezer_fans: 245532
+  musicbrainz: 3d052039-70d9-4f12-95eb-6703abdb0478
+Beatrice Egli:
+  deezer: 1424622
+  deezer_fans: 186441
+  musicbrainz: b14dcad7-bf9a-4d17-9a0f-f56d5b0d79bd
+Beatsteaks:
+  deezer: 2672
+  deezer_fans: 136524
+  musicbrainz: a9b88ebb-83aa-4ef7-b674-fabeb572c14e
+Ben Zucker:
+  deezer: 11142002
+  deezer_fans: 118613
+  musicbrainz: 8cb1685e-967d-4b32-8ba7-df94419aa004
+Berq:
+  deezer: 178410377
+  deezer_fans: 18229
+  musicbrainz: b44a1850-3a9e-4784-8428-40b38a2a7a05
+Betontod:
+  deezer: 14312
+  deezer_fans: 36190
+  musicbrainz: 9ae757bc-89bb-45b7-800c-00959ea371dd
+Bilderbuch:
+  deezer: 870631
+  deezer_fans: 29960
+  musicbrainz: 456104db-b21e-46a6-a094-1dd396f4c6a6
+Billie Eilish:
+  deezer: 9635624
+  deezer_fans: 9275271
+  musicbrainz: f4abc0b5-3f7a-4eff-8f78-ac078dbce533
+Blind Guardian:
+  deezer: 371
+  deezer_fans: 194123
+  musicbrainz: 7fa7fc04-1011-4876-8095-ecd232edea87
+Bon Jovi:
+  deezer: 637
+  deezer_fans: 5283236
+  musicbrainz: 5dcdb5eb-cb72-4e6e-9e63-b7bace604965
+Bonez MC:
+  deezer: 5139444
+  deezer_fans: 711233
+  musicbrainz: f56f33bb-7443-49a6-9345-4b78a0c89760
+Bosse:
+  deezer: 162065
+  deezer_fans: 85880
+  musicbrainz: ba8fe46e-af81-4fcd-8581-59d6920d5d55
+Bozza:
+  deezer: 408455
+  deezer_fans: 38737
+  musicbrainz: 987f7d45-90f2-41fe-806a-f3a37334aa5d
+Bring Me The Horizon:
+  deezer: 12874
+  deezer_fans: 1315683
+  musicbrainz: 074e3847-f67f-49f9-81f1-8c8cea147e8e
+Broilers:
+  deezer: 14771
+  deezer_fans: 96643
+  musicbrainz: 9276ffac-6d40-406c-a85d-bb3142b8b800
+Bruce Springsteen:
+  deezer: 4762
+  deezer_fans: 1813541
+  musicbrainz: 70248960-cb53-4ea4-943a-edb18f7d336f
+Bruno Mars:
+  deezer: 429675
+  deezer_fans: 12821924
+  musicbrainz: afb680f2-b6eb-4cd7-a70b-a63b25c763d5
+Bushido:
+  deezer: 11552
+  deezer_fans: 778913
+  musicbrainz: 13246906-ec3b-4ec5-bc2f-f7ca802facea
+Böhse Onkelz:
+  deezer: 12824
+  deezer_fans: 40817
+  musicbrainz: b3a70929-32bc-4ace-994f-434b26ce96fe
+Capital Bra:
+  deezer: 9602094
+  deezer_fans: 1244604
+  musicbrainz: b725da05-6d6e-4a28-b2c4-c639c24fc1cd
+Casper:
+  deezer: 396351
+  deezer_fans: 401904
+  musicbrainz: fd3ff7a2-e1d2-4486-9d25-cb9d69fa084c
+Central Cee:
+  deezer: 12096038
+  deezer_fans: 669435
+  musicbrainz: b0337af1-8d93-4671-b6c9-ba306bf942bf
+Chappell Roan:
+  deezer: 12945219
+  deezer_fans: 315207
+  musicbrainz: 56a55378-f155-48de-80a5-d80104221267
+Clueso:
+  deezer: 4885
+  deezer_fans: 160292
+  musicbrainz: 5c2717ab-3b1e-4043-8874-e88ecf391cc9
+Coldplay:
+  deezer: 892
+  deezer_fans: 18418937
+  musicbrainz: cc197bad-dc9c-440d-a5b5-d52ba2e14234
+Cro:
+  check: true
+  deezer: 2415341
+  deezer_fans: 1323143
+  musicbrainz: b2ea6506-645e-4935-8d82-84c3a95fe7f0
+DJ Ötzi:
+  deezer: 1083
+  deezer_fans: 164222
+  musicbrainz: 8d6a4455-1ae8-4e51-a481-08a85cb0141a
+Danger Dan:
+  deezer: 5298065
+  deezer_fans: 27198
+  musicbrainz: aaf0cc6b-8855-4a78-9b89-1574eb459f58
+Daniela Alfinito:
+  deezer: 364135
+  deezer_fans: 13134
+  musicbrainz: c888ceb8-2f81-483d-9ddc-25f60c264113
+Data Luv:
+  deezer: 67826542
+  deezer_fans: 12417
+  musicbrainz: d2c0f4ed-63df-4417-89ad-cb9d4b39133e
+Deichkind:
+  deezer: 12920
+  deezer_fans: 271570
+  musicbrainz: 5de80871-f721-4c7c-b0c5-4ad0d350c232
+Depeche Mode:
+  deezer: 545
+  deezer_fans: 3283660
+  musicbrainz: 8538e728-ca0b-4321-b7e5-cff6565dd4c0
+Die Amigos:
+  deezer: 132603
+  deezer_fans: 22704
+  musicbrainz: 725f116b-1f51-4c4f-8e00-1cb17937a05f
+Die Fantastischen Vier:
+  deezer: 6166
+  deezer_fans: 187860
+  musicbrainz: 7928481f-848e-4551-b658-472c0aaf0c85
+Die Toten Hosen:
+  deezer: 1497
+  deezer_fans: 397211
+  musicbrainz: c3bc80a6-1f4a-4e17-8cf0-6b1efe8302f1
+Die Ärzte:
+  deezer: 2154
+  deezer_fans: 350908
+  musicbrainz: f2fb0ff0-5679-42ec-a55c-15109ce6e320
+Drake:
+  deezer: 246791
+  deezer_fans: 24106984
+  musicbrainz: 9fff2f8a-21e6-47de-a2b8-7f449929d43f
+Dua Lipa:
+  deezer: 8706544
+  deezer_fans: 8794033
+  musicbrainz: 6f1a58bf-9b1b-49cf-a44a-6cefad7ae04f
+Ed Sheeran:
+  deezer: 384236
+  deezer_fans: 20935431
+  musicbrainz: b8a7c51f-362c-4dcb-a259-bc6e0095f0a6
+Eisbrecher:
+  deezer: 5579
+  deezer_fans: 110365
+  musicbrainz: 36e348fe-0cbc-4343-8fa5-b91e727ce94f
+Electric Callboy:
+  deezer: 163128877
+  deezer_fans: 156048
+  musicbrainz: cf075492-d880-4afc-b87b-d6b03e33dacc
+Element of Crime:
+  deezer: 15727
+  deezer_fans: 20383
+  musicbrainz: 40985bd2-6d44-4c86-bd16-35cad449cce3
+Eminem:
+  deezer: 13
+  deezer_fans: 19141992
+  musicbrainz: b95ce3ff-3d05-4e87-9e01-c97b66af13d4
+Ennio:
+  deezer: 154279482
+  deezer_fans: 8051
+Eno:
+  check: true
+  deezer: 305566
+  deezer_fans: 250261
+  musicbrainz: ff95eb47-41c4-4f7f-a104-cdc30f02e872
+Fantasy:
+  deezer: 83008
+  deezer_fans: 44944
+  musicbrainz: 07e0925b-0500-4d6d-9d22-a8f6823ca904
+Farid Bang:
+  deezer: 363472
+  deezer_fans: 507169
+  musicbrainz: 06eceb73-b79e-4f93-9709-d72782a4a916
+Feuerschwanz:
+  deezer: 327953
+  deezer_fans: 44544
+  musicbrainz: 107fe9d9-903d-4bdc-ba88-d1df3c2fa32c
+Florian Silbereisen:
+  deezer: 110507
+  deezer_fans: 29468
+  musicbrainz: f84e7bcf-0faf-43a3-a493-79ac0dfbb45e
+Frei.Wild:
+  deezer: 249751942
+  deezer_fans: 10954
+  musicbrainz: 6d29907f-d28c-42e4-94a0-660ecf9182f9
+Fynn Kliemann:
+  deezer: 14985439
+  deezer_fans: 16142
+  musicbrainz: f6b82d16-6877-42ff-b032-5295eb076af8
+Ghost:
+  check: true
+  deezer: 8506054
+  deezer_fans: 614064
+  musicbrainz: 2bcf2e02-5bc3-4c76-bf76-41126cb11444
+Giant Rooks:
+  deezer: 11476350
+  deezer_fans: 27467
+  musicbrainz: 917f3950-9a2a-4c0b-804c-06b1ffddd0c5
+Giovanni Zarrella:
+  deezer: 2019201
+  deezer_fans: 35360
+  musicbrainz: 785aa2ad-0ab3-40cc-ae2a-2c1d0d8910da
+Gracie Abrams:
+  deezer: 64874492
+  deezer_fans: 407529
+  musicbrainz: f7441bc7-d7de-4813-a2fc-31a4033d396d
+Gzuz:
+  deezer: 3970231
+  deezer_fans: 918432
+  musicbrainz: 8e7a213a-8fd6-400e-a491-1406016ae698
+Haftbefehl:
+  check: true
+  deezer: 807606
+  deezer_fans: 371030
+  musicbrainz: 5fce249a-96cd-4296-b9f2-ef60c876b0bb
+Harry Styles:
+  deezer: 5313805
+  deezer_fans: 2203965
+  musicbrainz: 7eb1ce54-a355-41f9-8d68-e018b096d427
+Heaven Shall Burn:
+  deezer: 9494
+  deezer_fans: 57835
+  musicbrainz: d044577e-aa22-43b7-ab29-cabee5f6643c
+Helene Fischer:
+  deezer: 215668
+  deezer_fans: 1025683
+  musicbrainz: 167e1cd2-4a9e-4f34-bcda-2e0acf0a1797
+Helloween:
+  deezer: 2582
+  deezer_fans: 479610
+  musicbrainz: 765774a0-2060-469b-8b7d-612eea48579b
+Herbert Grönemeyer:
+  deezer: 4568
+  deezer_fans: 170994
+  musicbrainz: 456eabce-d1dd-4481-a206-36ab4f2eaeb8
+Howard Carpendale:
+  deezer: 75147
+  deezer_fans: 83722
+  musicbrainz: 506aa5b0-c6fb-4a69-8dd3-f06a369d5abc
+Hämatom:
+  deezer: 393876
+  deezer_fans: 32089
+  musicbrainz: f10ad2fb-d81e-4075-9070-453f481b5fc9
+Ikke Hüftgold:
+  deezer: 1668960
+  deezer_fans: 26680
+  musicbrainz: 222cdefa-730a-442f-9f6c-74f1d8534cc3
+Imagine Dragons:
+  deezer: 416239
+  deezer_fans: 9544185
+  musicbrainz: 012151a8-0f9a-44c9-997f-ebd68b5389f9
+In Extremo:
+  deezer: 4201
+  deezer_fans: 89351
+  musicbrainz: 8ebd161e-f45e-41b9-8019-fcbd094c327f
+Iron Maiden:
+  deezer: 931
+  deezer_fans: 3791213
+  musicbrainz: ca891d65-d9b0-4258-89f7-e6ba29d83767
+Isi Glück:
+  deezer: 12213962
+  deezer_fans: 17718
+  musicbrainz: f3b55eeb-1034-4605-ae4b-54abad226c79
+Jamule:
+  deezer: 53049432
+  deezer_fans: 95650
+  musicbrainz: 42c53bdf-212f-466f-a800-bbdc406452f3
+Jazeek:
+  deezer: 153996392
+  deezer_fans: 48165
+  musicbrainz: be94f27e-bd46-4f6c-9a51-83097d910b13
+Jeremias:
+  check: true
+  deezer: 65310322
+  deezer_fans: 13780
+  musicbrainz: c685e7be-102b-4d4e-889d-6de82d32ba6c
+Johannes Oerding:
+  deezer: 280640
+  deezer_fans: 203417
+  musicbrainz: 2af1279f-77e1-43d4-a940-bb97cdd947f1
+Juju:
+  deezer: 49634222
+  deezer_fans: 186552
+  musicbrainz: 1e83d617-ce32-4168-97d2-270808a1563c
+Justin Bieber:
+  deezer: 288166
+  deezer_fans: 11169558
+  musicbrainz: e0140a67-e4d1-4f13-8a01-364355bee46e
+K.I.Z:
+  deezer: 5095554
+  deezer_fans: 282965
+  musicbrainz: 7a3be325-3e8c-4843-b7ad-a1fe57355589
+KC Rebell:
+  deezer: 2169401
+  deezer_fans: 923144
+  musicbrainz: e7aec99d-0bd3-4ccc-9477-0e43b3926757
+Kanye West:
+  deezer: 230
+  deezer_fans: 4553139
+Kastelruther Spatzen:
+  deezer: 76587
+  deezer_fans: 25257
+  musicbrainz: 020b54b4-9263-4300-8ddd-a1a383481b6e
+Kendrick Lamar:
+  deezer: 525046
+  deezer_fans: 6185532
+  musicbrainz: 381086ea-f511-4aba-bdf9-71c753dc5077
+Kerstin Ott:
+  deezer: 8123405
+  deezer_fans: 195813
+  musicbrainz: f4ad7695-1169-4c0d-88f6-c6ced06c0bc9
+Kissin' Dynamite:
+  deezer: 244909
+  deezer_fans: 12644
+  musicbrainz: 93047ccd-ec26-40eb-9538-9705b18a2a2e
+Kollegah:
+  deezer: 472089
+  deezer_fans: 1043830
+  musicbrainz: 38033d8c-9f77-4610-b861-e920bbd2e88d
+Kontra K:
+  deezer: 1684527
+  deezer_fans: 1152314
+  musicbrainz: 6b25f301-8144-4e5b-80b9-0b23ce6dbab7
+Kool Savas:
+  deezer: 72038
+  deezer_fans: 393659
+  musicbrainz: 2e0d05e0-d147-46e6-be51-8ffed2a9e0da
+Kraftklub:
+  deezer: 985101
+  deezer_fans: 298243
+  musicbrainz: ecfc32cb-b26e-41a0-8b41-7100c6a3fcc4
+Kreator:
+  deezer: 6067
+  deezer_fans: 189688
+  musicbrainz: 39822e8d-f24e-4f07-b51b-28b22e59fbdb
+Kärbholz:
+  deezer: 180036
+  deezer_fans: 30010
+  musicbrainz: 1d6d939e-65d7-4ee9-8e91-cd5fcf7dcdff
+LEA:
+  deezer: 89192
+  deezer_fans: 453468
+  musicbrainz: 39a3d8b1-dc19-4303-921d-7ec63eec329c
+Lady Gaga:
+  deezer: 75491
+  deezer_fans: 9311911
+  musicbrainz: 650e7db6-b795-4eb5-a702-5ea2fc46c848
+Lana Del Rey:
+  deezer: 1424821
+  deezer_fans: 5824178
+  musicbrainz: b7539c32-53e7-4908-bda3-81449c367da6
+Lewis Capaldi:
+  check: true
+  deezer: 12088868
+  deezer_fans: 1209963
+  musicbrainz: 526aab94-697f-44a9-b630-41d1c0505953
+Linkin Park:
+  deezer: 92
+  deezer_fans: 12249189
+  musicbrainz: f59c5520-5f46-4d2c-b2c4-822eabf53419
+Lord of the Lost:
+  deezer: 309541
+  deezer_fans: 35588
+  musicbrainz: 8cf95123-5023-4257-933e-4d7ebbc5d8a2
+Loredana:
+  deezer: 15051551
+  deezer_fans: 440353
+  musicbrainz: c5e87fcd-9cad-4e60-b26a-20ab2cf0def4
+Luciano:
+  deezer: 12632197
+  deezer_fans: 545500
+  musicbrainz: 4600b3b7-57ad-410d-b65d-ca0df36822dd
+Maite Kelly:
+  deezer: 1419227
+  deezer_fans: 151121
+  musicbrainz: c3fa8aad-6157-43ff-8974-5f828be520f2
+Makko:
+  check: true
+  deezer: 15197319
+  deezer_fans: 29247
+  musicbrainz: d0d49b8a-7995-4e0f-9a0a-1c4b1e744477
+Mark Forster:
+  deezer: 2163861
+  deezer_fans: 1388899
+  musicbrainz: 82931296-9466-447f-a7af-8f3a856bcfd9
+Marteria:
+  deezer: 167362
+  deezer_fans: 431345
+  musicbrainz: 58cc01f7-673c-4960-b913-4bc68118642a
+Matthias Reim:
+  deezer: 110754
+  deezer_fans: 283001
+  musicbrainz: 2e433b57-1e40-4a8f-b38d-7675fda5698a
+Max Giesinger:
+  deezer: 1587666
+  deezer_fans: 215770
+  musicbrainz: b6b5e4fd-c455-48c1-b384-d7362ac2e3d2
+Max Raabe:
+  deezer: 71561
+  deezer_fans: 24683
+  musicbrainz: 7930faec-582a-480b-9398-8cb83f39d79c
+Metallica:
+  deezer: 119
+  deezer_fans: 8168780
+  musicbrainz: 65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab
+Michael Bublé:
+  deezer: 1478
+  deezer_fans: 1591814
+  musicbrainz: 611700cf-27f0-4dc9-ae80-c513a767853e
+Michael Patrick Kelly:
+  deezer: 1533472
+  deezer_fans: 68523
+  musicbrainz: 8f532bd1-c27a-4a7c-80f9-9d163f234623
+Michelle:
+  deezer: 5645
+  deezer_fans: 183114
+  musicbrainz: 6da018b5-94fe-4f9b-8cd7-96a19bf2b03e
+Montez:
+  check: true
+  deezer: 1514182
+  deezer_fans: 65035
+  musicbrainz: 07742730-41c7-4af9-96ef-9539e1341d26
+Nena:
+  check: true
+  deezer: 2211
+  deezer_fans: 124372
+  musicbrainz: 38bfaa7f-ee98-48cb-acd0-946d7aeecd76
+Nimo:
+  deezer: 1355105
+  deezer_fans: 486905
+  musicbrainz: 08053aff-d56f-4753-bcfa-38b7ce9ffd1c
+Nina Chuba:
+  deezer: 52281412
+  deezer_fans: 126923
+  musicbrainz: eb4a63b5-6870-4082-b9f2-9f7a9f36b900
+OG Keemo:
+  deezer: 13304419
+  deezer_fans: 10438
+  musicbrainz: 66711d0a-cfcb-406c-9fb4-694384f417a3
+Oimara:
+  deezer: 14820731
+  deezer_fans: 6957
+  musicbrainz: a8e6fa67-6974-435c-9e45-287508fb7880
+Olivia Rodrigo:
+  deezer: 11152580
+  deezer_fans: 1837364
+  musicbrainz: 6925db17-f35e-42f3-a4eb-84ee6bf5d4b0
+Olli Schulz:
+  deezer: 167356
+  deezer_fans: 29994
+  musicbrainz: e7f653ba-8cb5-41d9-aaac-f917996fd67d
+P!nk:
+  deezer: 69925
+  deezer_fans: 4667829
+  musicbrainz: f4d5cc07-3bc9-4836-9b15-88a08359bc63
+Pashanim:
+  deezer: 61343932
+  deezer_fans: 128534
+  musicbrainz: 962a2590-91ed-4946-9724-f7dff6c61e03
+Paula Hartmann:
+  deezer: 13488443
+  deezer_fans: 14121
+  musicbrainz: 40c1bbd0-45d1-485a-8f4c-3943fa97208a
+Peter Fox:
+  deezer: 80487
+  deezer_fans: 310474
+  musicbrainz: 10c07fca-2678-40b6-9644-cde68d3e9554
+Peter Maffay:
+  deezer: 70316
+  deezer_fans: 123931
+  musicbrainz: b4ce8f8f-72f9-48f0-92be-606095d4b6e0
+Philipp Poisel:
+  deezer: 72502
+  deezer_fans: 120365
+  musicbrainz: e0a9c844-ee81-49aa-9976-a4e4e68b866d
+Pietro Lombardi:
+  deezer: 1275238
+  deezer_fans: 314723
+  musicbrainz: 2505c7b8-4a2e-4177-b30d-0a56115d6dcb
+Post Malone:
+  deezer: 7543848
+  deezer_fans: 4209480
+  musicbrainz: b1e26560-60e5-4236-bbdb-9aa5a8d5ee19
+Powerwolf:
+  deezer: 428405
+  deezer_fans: 253141
+  musicbrainz: 3ef77bdc-b1ce-4e44-aa4b-acfa763c5284
+Provinz:
+  deezer: 60892482
+  deezer_fans: 29336
+  musicbrainz: c722fdba-6fc0-46e8-932d-9e817d6730b2
+Pur:
+  deezer: 241033
+  deezer_fans: 99971
+  musicbrainz: fbffac93-a52b-47a8-8f4f-7884157f2670
+RAF Camora:
+  deezer: 1419381
+  deezer_fans: 1204547
+  musicbrainz: a5386648-7b2c-4e0a-8094-ac5d16b91e54
+RIN:
+  check: true
+  deezer: 492716
+  deezer_fans: 129997
+  musicbrainz: 0742118c-8ec0-4aa2-b093-fe36d294f7e9
+Rammstein:
+  deezer: 464
+  deezer_fans: 2730326
+  musicbrainz: b2d122f9-eadb-4930-a196-8f221eeb0c66
+Reezy:
+  deezer: 5719412
+  deezer_fans: 57145
+  musicbrainz: 6973e38e-f956-460d-83f6-da6894f2deb0
+Reinhard Mey:
+  deezer: 240924
+  deezer_fans: 35929
+  musicbrainz: 3531715d-fee3-4c5b-82ff-5d85865b598b
+Revolverheld:
+  deezer: 4565
+  deezer_fans: 258226
+  musicbrainz: 35098f2d-e803-4bc6-bd0e-09c57468977b
+Robbie Williams:
+  deezer: 212
+  deezer_fans: 1917981
+  musicbrainz: db4624cf-0e44-481e-a9dc-2142b833ec2f
+Roland Kaiser:
+  deezer: 70387
+  deezer_fans: 239136
+  musicbrainz: efa2f016-ec5f-4a12-9857-c2801ea4704b
+Sabaton:
+  deezer: 12022
+  deezer_fans: 413515
+  musicbrainz: 39a31de6-763d-48b6-a45c-f7cfad58ffd8
+Sabrina Carpenter:
+  deezer: 1176900
+  deezer_fans: 1825641
+  musicbrainz: 1882fe91-cdd9-49c9-9956-8e06a3810bd4
+Saltatio Mortis:
+  deezer: 15912
+  deezer_fans: 71927
+  musicbrainz: d3201290-2791-4b2c-9d79-62eb6240e742
+Samra:
+  deezer: 307151
+  deezer_fans: 516860
+  musicbrainz: d2efe9f5-f5ff-4c1f-bc56-bac52da49105
+Santiano:
+  deezer: 1593024
+  deezer_fans: 149814
+  musicbrainz: af689c12-a808-4f12-8ffb-f68dd021f5c0
+Sarah Connor:
+  deezer: 128
+  deezer_fans: 423770
+  musicbrainz: 9293fc79-e77c-4ee6-a092-61df10ca47ea
+Schandmaul:
+  deezer: 8852
+  deezer_fans: 59799
+  musicbrainz: ff7f80cd-05c2-4068-a00e-fbfbd453d049
+Schiller:
+  deezer: 8648
+  deezer_fans: 47211
+  musicbrainz: 75ebdfa0-4a8a-496a-a57f-e4bb93b14d4c
+Scooter:
+  deezer: 587
+  deezer_fans: 257347
+  musicbrainz: 83e59f23-3b0b-4304-834d-5bcafd5df6d2
+Scorpions:
+  deezer: 863
+  deezer_fans: 3683638
+  musicbrainz: c3cceeed-3332-4cf0-8c4c-bbde425147b6
+Seeed:
+  deezer: 5000
+  deezer_fans: 425136
+  musicbrainz: 49c43c49-328d-4b14-8a1d-be99cafaec14
+Seiler und Speer:
+  deezer: 7208196
+  deezer_fans: 34942
+  musicbrainz: 1b5c5c26-7232-48e2-8363-08f420b1f5fa
+Semino Rossi:
+  deezer: 76744
+  deezer_fans: 42710
+  musicbrainz: 59b59e94-d07f-412c-af34-9de4f15f146c
+Shindy:
+  deezer: 4959736
+  deezer_fans: 160887
+  musicbrainz: eb7215c0-913b-4403-a7e2-62d22393e358
+Shirin David:
+  deezer: 7312776
+  deezer_fans: 224826
+  musicbrainz: 846c1b6c-38ca-4d8c-829e-0b8a33cbcfe9
+Sido:
+  deezer: 12039
+  deezer_fans: 1330983
+  musicbrainz: 3caf69c1-fdd8-44bc-b0a5-8af3ad8a47cd
+Silbermond:
+  deezer: 6050
+  deezer_fans: 215204
+  musicbrainz: 34d42823-6b56-4861-a675-1565bf40d557
+Ski Aggu:
+  deezer: 112144802
+  deezer_fans: 46172
+  musicbrainz: f1d46f29-34fd-4cd5-959f-0a213e1f1d8e
+Sleep Token:
+  deezer: 11025166
+  deezer_fans: 143779
+  musicbrainz: 775ad383-ac2d-479a-af9d-b561442cb749
+Slipknot:
+  deezer: 117
+  deezer_fans: 4149937
+  musicbrainz: a466c2a2-6517-42fb-a160-1087c3bafd9f
+Stray Kids:
+  check: true
+  deezer: 13923487
+  deezer_fans: 1274719
+  musicbrainz: 142b343d-bf5a-428c-a64f-6d1a7566bbe9
+Subway to Sally:
+  deezer: 12066
+  deezer_fans: 50124
+  musicbrainz: 5533fa1c-4102-4ae7-92ae-78dddb17fe7f
+Summer Cem:
+  deezer: 1575905
+  deezer_fans: 513937
+  musicbrainz: 11f4adc5-afc5-4b6b-b6dd-f2c0aeb578f4
+Symba:
+  deezer: 2156761
+  deezer_fans: 19916
+  musicbrainz: 0f092e14-8805-451f-8d01-257b8183c106
+Tate McRae:
+  deezer: 13817211
+  deezer_fans: 613362
+  musicbrainz: f9133869-f87c-459c-9aa7-2f176cda7e06
+Taylor Swift:
+  deezer: 12246
+  deezer_fans: 12748385
+  musicbrainz: 20244d07-534f-4eff-b4d4-930878889970
+The Rolling Stones:
+  deezer: 11
+  deezer_fans: 7110356
+  musicbrainz: b071f9fa-14b0-4217-8e97-eb41da73f598
+The Weeknd:
+  deezer: 4050205
+  deezer_fans: 14736862
+  musicbrainz: c8b03190-306c-4120-bb0b-6f2ebfc06ea9
+Thomas Anders:
+  deezer: 56398
+  deezer_fans: 54665
+  musicbrainz: b7f99057-6dd5-4b0d-ac85-4039a36e8717
+Till Lindemann:
+  deezer: 4403788
+  deezer_fans: 64989
+  musicbrainz: f71f8e0d-c109-4a50-9826-2559981d915e
+Tim Bendzko:
+  deezer: 422888
+  deezer_fans: 314045
+  musicbrainz: ec17fe44-f590-4482-afe3-0a473f743fc0
+Tocotronic:
+  deezer: 3472
+  deezer_fans: 21441
+  musicbrainz: 7717539b-33aa-45d5-b88d-9e627172db19
+Tokio Hotel:
+  deezer: 3255
+  deezer_fans: 408164
+  musicbrainz: 462a85b4-83ac-4164-86b3-e5ac6a7ec040
+Travis Scott:
+  deezer: 4495513
+  deezer_fans: 3149253
+  musicbrainz: e4a51f17-a57b-47b1-b37b-f552d0f8e9e6
+Trettmann:
+  deezer: 8650570
+  deezer_fans: 54838
+  musicbrainz: ed818245-5d44-458a-bbc5-ff480901c2b9
+Udo Lindenberg:
+  deezer: 64141
+  deezer_fans: 134681
+  musicbrainz: 8d3c6a3c-4d97-455c-ad07-3fefc0172861
+Ufo361:
+  deezer: 1660131
+  deezer_fans: 530809
+  musicbrainz: 80e8e55c-6e9b-470f-844b-48e618fb6e56
+Unheilig:
+  deezer: 8055
+  deezer_fans: 306299
+  musicbrainz: 6dfa03fb-8b02-4055-b7cc-e48f426b13f8
+Vanessa Mai:
+  deezer: 7568478
+  deezer_fans: 299799
+  musicbrainz: ee7fe8ca-b7e2-44c2-aba1-e72e4550c3f3
+Versengold:
+  deezer: 1616233
+  deezer_fans: 33472
+  musicbrainz: 36cb1e0a-0d39-4c36-b123-88271a7e730a
+Wanda:
+  deezer: 130529
+  deezer_fans: 33803
+  musicbrainz: 06e3bce0-c612-4a5f-b095-9ffed1e4a656
+Wincent Weiss:
+  deezer: 7608832
+  deezer_fans: 268098
+  musicbrainz: ae82eb39-d6b2-4578-a293-219906d0c200
+Wolfgang Petry:
+  deezer: 69993
+  deezer_fans: 141706
+  musicbrainz: 567c98c2-d2f6-4b7d-a6d7-af7c032ab2df
+Yung Hurn:
+  deezer: 10859478
+  deezer_fans: 32987
+  musicbrainz: 6d447010-dc6c-4c7f-91cc-a201932a33dd
+Zartmann:
+  deezer: 123215512
+  deezer_fans: 24123
+  musicbrainz: 0fb12e36-e56d-4b08-86c2-d996fdcb0f56
+Zuna:
+  deezer: 5026705
+  deezer_fans: 290789
+  musicbrainz: 5ac4ee23-b81c-4e23-b1c0-e86f73e828c4
